@@ -35,6 +35,7 @@ public class JavaQuest3 {
         MonthOfName = "January";
         // Code here ...
         number_Of_DaysInMonth= 31;
+        break;
       case 2:
         MonthOfName = "February";
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
@@ -42,6 +43,7 @@ public class JavaQuest3 {
         }else {
           number_Of_DaysInMonth= 28;
         }
+        break;
         // The February has 29 days: (Every 4 years and the year cannot divded by 100)
         // or The year can divided by 400
         // otherwise the February should have 28 days only
@@ -50,51 +52,52 @@ public class JavaQuest3 {
         MonthOfName = "March";
         // Code here ...
         number_Of_DaysInMonth= 31;
-
+        break;
         case 4:
         MonthOfName = "April";
         // Code here ...
         number_Of_DaysInMonth= 30;
-
+        break;
         case 5:
         MonthOfName = "May";
         // Code here ...
         number_Of_DaysInMonth= 31;
-
+        break;
         case 6:
         MonthOfName = "June";
         // Code here ...
         number_Of_DaysInMonth= 30;
-
+        break;
         case 7:
         MonthOfName = "July";
         // Code here ...
         number_Of_DaysInMonth= 31;
-
+        break;
         case 8:
         MonthOfName = "August";
         // Code here ...
         number_Of_DaysInMonth= 31;
-
+        break;
         case 9:
         MonthOfName = "September";
         // Code here ...
         number_Of_DaysInMonth= 30;
-
+        break;
         case 10:
         MonthOfName = "October";
         // Code here ...
         number_Of_DaysInMonth= 31;
-
+        break;
         case 11:
         MonthOfName = "November";
         // Code here ...
         number_Of_DaysInMonth= 30;
-
+        break;
         case 12:
         MonthOfName = "December";
         // Code here ...
         number_Of_DaysInMonth= 31;
+        break;
     }
     System.out.print(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days\n");
   }
