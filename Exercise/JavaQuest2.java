@@ -60,6 +60,6 @@ public class JavaQuest2 {
     // code here ...same as the above, but it will NOT print out.
     if (year5 % 4 == 0 && ((year5 % 100 != 0 && year5 % 400 == 0))) {
       System.out.println(year5 + "is a leap year."); // code here ..
-    };
-    }
+    } ;
   }
+}

@@ -1,4 +1,4 @@
-public class App {
+public class DemoIf {
     public static void main(String[] args) throws Exception {
         int x = 1;
         int y = 0;
@@ -56,7 +56,6 @@ public class App {
         int score = 69;
         char grade = ' ';
         String examResult = "passed";
-        boolean pass = (score >= 70);
         // score > 90 -> A (Pass)
         // 80- 90 -> B (Pass)
         // 70-79-> C (Pass)
@@ -76,5 +75,67 @@ public class App {
         }
         System.out.println(
                 "The grade is" + " " + grade + " " + "and" + examResult + ".");
+
+        // String
+        String s1 = "hellosss";
+        // check if the length of s1>5
+        int length0fS1 = (s1.length());
+        if (length0fS1 > 5) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+
+        if (s1.length() > 5) {
+            System.out.println("s1.length()>5");
+        }
+
+        // Another approach:(! means NOT)
+        if (!(s1.length() <= 5)) {
+            System.out.println("s1.length()>5");
+        }
+
+        // char (==, >=, <=, >, <, !=)
+        char gender = 'F';
+        if (gender == 'M') {
+
+        } else if (gender == 'F') {
+
+        }
+        if (gender != 'M') {
+            System.out.println("gender is not equals to M");
+        }
+        // int, long, short, byte, float, double (==, >=, <=, >, <, !=)
+        int j = 10;
+        if (j > 10.2) { // j -> double
+            System.out.println("j>10.2");
+        } else {
+            System.out.println("j<=10.2");
+        }
+        double u = 10.4;
+        if (u > 10) { // 10-> double: 10.4 > 10
+            System.out.println("u>10");
+        }
+        // boolean (==, !=)
+        int v = 4;
+        boolean b1 = v > 10; // false
+        if (b1 == true) {
+
+        }
+        if (b1 != false) {
+
+        }
+        if (!(b1 == true)) {
+
+        }
+
+        // String.charAt(int index)-> return char
+        String s2 = "abcdefg";
+        // check if s2 strat with 'a' and end with'g, print out 'yes', otherwise "no"
+        if (s2.charAt(0)== 'a' && s2.endsWith("g")){
+            System.out.println("yes");
+        }else {
+            System.out.println("no");
+        }
     }
 }
