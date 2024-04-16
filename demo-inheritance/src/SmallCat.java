@@ -1,0 +1,18 @@
+public class SmallCat extends Cat {
+
+  private double weight;
+
+  public SmallCat(int age, String name, double weight){
+    super(age, name); //Construct a cat object -> construct animal object 
+    this.weight = weight;
+  }
+
+  public static void main(String[] args) {
+    SmallCat sc =new SmallCat(3, "jenny", 3.2); //super(): -> cat()
+
+    System.out.println(sc.getAge()); //3 
+    System.out.println(sc.getAnimalName()); //name = Jenny 
+    System.out.println(sc.getCatName()); //null
+    System.out.println(sc.getName()); 
+  }
+}

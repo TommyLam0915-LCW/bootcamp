@@ -3,6 +3,12 @@
     "demo-loop/src",
     "demo-loop",
     "demo-array/src",
-    "Exercise"
-  ]
+    "Exercise",
+    "demo-classObject/src",
+    "leecode",
+    "classes/src",
+    "demo-Blockchain/src",
+    "demo-enum/src",
+    "demo-inheritance/src"
+    ]
 }
