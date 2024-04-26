@@ -1,13 +1,11 @@
 public class Animal {
 
-  public static
-
   public static String x = "abc";
 
   private String name;
 
   public Animal() {
-
+    System.out.println("I'm Animal Constructor ... ");
   }
 
   public Animal(String name) {
@@ -23,14 +21,18 @@ public class Animal {
   }
 
   public void sleep() {
-
+    System.out.println("Sleeping ...");
   }
 
   public void run() {
-
+    System.out.println("Running");
   }
 
-  public static String lowerY() {
+  private void hello(){
+    System.out.println("hello");
+  }
+
+  public String lowerY() {
     return Cat.y.toLowerCase();
   }
 

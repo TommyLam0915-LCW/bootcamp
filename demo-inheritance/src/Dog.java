@@ -6,11 +6,14 @@ public class Dog extends Animal{
     this.color = color;
   }
 
+  public void bark(){
+    System.out.println("Barking ...");
+  }
+
   public static void main(String[] args) {
     Dog dog = new Dog();
     dog.setColor(Color.BLACK);
     dog.setName("Sally");
-    System.out.println(dog.getName());
+    System.out.println(dog.getName()); //"Sally"
   }
-
 }

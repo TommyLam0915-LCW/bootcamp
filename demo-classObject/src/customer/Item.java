@@ -63,7 +63,5 @@ public class Item {
     Customer c = new Customer("sallychan");
     c.add(order1);
     System.out.println(c); // Customer(username=sallychan, orders=[Order(orderNo=V00001, items=[Item(description=APPLEprice=4.5quantity=2), Item(description=ORANGEprice=5.0quantity=4)])])
-
   }
-
 }

@@ -9,6 +9,13 @@
     "classes/src",
     "demo-Blockchain/src",
     "demo-enum/src",
-    "demo-inheritance/src"
+    "demo-inheritance/src",
+    "demo-abstraction/src",
+    "demo-list/src",
+    "self-learning/src",
+    "demo-linkedList/src",
+    "demo-comparator/src",
+    "demo-queue/src",
+    "demo-generics"
     ]
 }

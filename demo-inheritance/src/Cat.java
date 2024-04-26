@@ -1,82 +1,83 @@
-public class Cat extends Animal{
-  
-  public static String y ="DEF";
+// public class Cat extends Animal {
 
-  private int age;
+//   public static String y = "DEF";
 
-  private String name;
+//   private int age;
 
-  public Cat(){
+//   private String name;
 
-  };
-  // Child Class Cat object Cat inherit all instance variable, instance methods from Parent Class Animal object
-  //but it does not inherit constructor
-  public Cat(int age){
-    super(); //create Animal's constructor 
-    this.age =age;
-  }
+//   public Cat() {
 
-  //Approach 1 
-  public String getCatName(){
-    return this.name;
-  }
-  public void setCatName(String name){
-    this.name = name;
-  }
+//   };
 
-  //Approach 2 
-  public String getAnimalName(){
-    return "name=" + super.getName();
-  }
+//   // Child Class Cat object Cat inherit all instance variable, instance methods from Parent Class Animal object
+//   // but it does not inherit constructor
+//   public Cat(int age) {
+//     super(); // create Animal's constructor
+//     this.age = age;
+//   }
 
-  public Cat(int age, String name){
-    super(name);
-    this.age = age;
-  }
+//   public Cat(int age, String name) {
+//     // super; // by default call super()
+//     super(name);
+//     this.age = age;
+//   }
 
-  public int getAge (){
-    return this.age; 
-  }
+//   public int getAge() {
+//     return this.age;
+//   }
 
-  public void setAge (int age){
-    this.age = age;
-  }
+//   public void setAge(int age) {
+//     this.age = age;
+//   }
 
-  @Override
-  public void sleep(){  //Method signature is same as the Animal object sleep()
-    System.out.println("Cat is Sleeping");
-  }
+//   // Approach 1
+//   public String getCatName() {
+//     return this.name;
+//   }
 
-public String upperX(){
-  return Animal.x.toUpperCase();
-}
+//   public void setCatName(String name) {
+//     this.name = name;
+//   }
 
+//   // Approach 2
+//   public String getAnimalName() {
+//     return "name=" + super.getName();
+//   }
 
-  //Instance methods
-  public static void main(String[] args){
-    Cat cat = new Cat(12);
-    cat.setName("Jenny");
+//   @Override
+//   public void sleep() { // Method signature is same as the Animal object sleep()
+//     System.out.println("Cat is Sleeping");
+//   }
 
+//   public String upperX() {
+//     return Animal.x.toUpperCase();
+//   }
 
-    //New Animals 
+//   public static void main(String[] args) {
+//     Cat cat = new Cat(12);
+//     cat.setName("Jenny");
+//     System.out.println(cat.getName()); //"Jenny"
 
-    //Cat has its own instance variable 
-    cat.setAge(10);
-    System.out.println(cat.getAge());
-    //Another child class extends Animal 
-    //New Animal 
+//     // Cat has its own instance variable
+//     cat.setAge(10);
+//     System.out.println(cat.getAge());
+//     // Another child class extends Animal
 
-    //call sleep()
-    cat.sleep();
-    cat.run(); //Running ... 
+//     // New Animal
 
-    Cat c2 = new Cat(2, "Jenny");
-    c2.setCatName("Vincent");
-    System.out.println(c2.getCatName()); //Vincent
-    System.out.println(c2.getName()); //"Jenny"
-    System.out.println(c2.getAnimalName()); //Jenny
+//     // call sleep()
+//     cat.sleep();
+//     cat.run(); // Running ...
 
-    System.out.println(c2.upperX()); //ABC
+//     Cat c2 = new Cat(2, "Jenny");
+//     c2.setCatName("Vincent");
+//     System.out.println(c2.getCatName()); // Vincent
+//     System.out.println(c2.getName()); // "Jenny"
+    
+//     System.out.println(c2.getAnimalName()); // Jenny
 
-  }
-}
+//     System.out.println(c2.upperX()); // ABC
+
+//   }
+// }
