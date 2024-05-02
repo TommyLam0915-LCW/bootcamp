@@ -16,6 +16,9 @@
     "demo-linkedList/src",
     "demo-comparator/src",
     "demo-queue/src",
-    "demo-generics"
+    "demo-generics",
+    "demo-recursive",
+    "demo-exception",
+    "demo-lambda/src"
     ]
 }

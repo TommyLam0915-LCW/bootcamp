@@ -1,12 +1,17 @@
+import java.util.List;
+
 public class App {
 
-    public static int getX(List<Object>Strings){
-        return strings.size();
-    }
+  public static int getX(List<String> strings) {
+    return strings.size();
+  }
 
-    //Same Method Signature, because list<Integer> is same as list<String>, from input parameter perspective
-    
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-    }
+  // Same Method Signatrue, becasue List<Integer> is same as List<String>, from input parameter perspective
+  // public static int getX(List<Integer> strings) {
+  //    return strings.size();
+  // }
+
+  public static void main(String[] args) throws Exception {
+    System.out.println("Hello, World!");
+  }
 }

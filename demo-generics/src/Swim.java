@@ -1,5 +1,5 @@
 package src;
 
-public class Swim {
-  
+public interface Swim {
+  void swim();
 }

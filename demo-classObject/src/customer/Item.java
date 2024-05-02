@@ -23,14 +23,6 @@ public class Item {
         .doubleValue();
   }
 
-  public double total() {
-    BigDecimal total = BigDecimal.valueOf(0.0d);
-    for (int i =0; i< items.length; i++){
-      total = total.add(BigDecimal.valueOf(items[i].subtotal()));
-    }
-    return total.doubleValue();
-  }
-
   public String toString() {
     return "Item(" //
         + "description=" + this.desc //
@@ -56,12 +48,14 @@ public class Item {
     order1.add(item2);
     System.out.println(order1); // Order(orderNo=V00001, items=[Item(description=APPLE, price=4.5, quantity=2), Item(description=ORANGE, price=5.0, quantity=4)])
 
-    System.out.println(order1.total());
+    System.out.println(order1.total()); // 29.0
 
     // Order2
     // Order[] orders = new Order[2];
     Customer c = new Customer("sallychan");
     c.add(order1);
     System.out.println(c); // Customer(username=sallychan, orders=[Order(orderNo=V00001, items=[Item(description=APPLEprice=4.5quantity=2), Item(description=ORANGEprice=5.0quantity=4)])])
+
   }
+
 }

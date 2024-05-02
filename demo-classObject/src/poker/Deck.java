@@ -1,15 +1,17 @@
 package poker;
 
+import java.util.Arrays;
+
 public class Deck {
 
   public static final Suit[] SUITS =
-      new Suit[] {Card.DIAMOND, Card.CLUB, Card.HEART, Card.SPADE};
+      new Suit[] {Suit.DIAMOND, Suit.CLUB, Suit.HEART, Suit.SPADE};
 
   public static final int[] RANKS = new int[] {Card.ONE, Card.TWO, Card.THREE,
       Card.FOUR, Card.FIVE, Card.SIX, Card.SEVEN, Card.EIGHT, Card.NINE,
       Card.TEN, Card.JACK, Card.QUEEN, Card.KING};
 
-  private Card[] cards;
+  private final Card[] cards; // final the address of array
 
   private Deck(boolean isEmpty) {
     if (isEmpty) {
@@ -25,7 +27,7 @@ public class Deck {
     }
   }
 
-  public Card[] getCards(){
+  public Card[] getCards() {
     return this.cards;
   }
 
@@ -37,10 +39,10 @@ public class Deck {
     return new Deck(false);
   }
 
-  public String toString(){
+  public String toString() {
     return "Deck(" //
-    + "cards =" + Arrays.toString(this.cards)//
-    + ")"; 
+        + "cards=" + Arrays.toString(this.cards) //
+        + ")";
   }
 
   public static void main(String[] args) {
@@ -53,9 +55,9 @@ public class Deck {
     System.out.println(deck3);
 
     Suit x = Suit.SPADE;
-    System.out.println(x != Suit.CLUB); // true 
-    System.out.println(x == Suit.SPADE); // true 
-    if (x == Suit.HEART){
+    System.out.println(x != Suit.CLUB); // true
+    System.out.println(x == Suit.SPADE); // true
+    if (x == Suit.HEART) {
       System.out.println("its a heart");
     } else {
       System.out.println("not a heart");

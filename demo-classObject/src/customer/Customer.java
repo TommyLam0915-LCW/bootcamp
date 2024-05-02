@@ -14,6 +14,10 @@ public class Customer {
     this.orders = new Order[0];
   }
 
+  public void setUsername(String username) {
+    this.username = username;
+  }
+
   public void add(Order order) {
     Order[] copyArr = this.orders;
     this.orders = new Order[this.orders.length + 1];
@@ -29,6 +33,12 @@ public class Customer {
         + "username=" + this.username //
         + ", orders=" + Arrays.toString(this.orders) //
         + ")";
+  }
+
+  public static void main(String[] args) {
+    Customer customer = new Customer("John"); // create a new object
+    customer.setUsername("Peter");
+
   }
 
 }

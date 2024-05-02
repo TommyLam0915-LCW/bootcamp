@@ -1,4 +1,4 @@
-package Week3.InstanceMethod;
+package Week3.InstanceVariableAndConstructor;
 
 public class Firefighter extends People {
   // the firefighter subclass has one field

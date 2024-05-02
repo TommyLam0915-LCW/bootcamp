@@ -82,7 +82,7 @@ public class Loop {
             count01++;
         } while (count01 < 5);
 
-        //With User Input
+        // With User Input
         int number01;
         Scanner scanner = new Scanner(System.in);
 
@@ -104,15 +104,15 @@ public class Loop {
         } while (count02 < 5);
 
 
-        // With continue statement 
-        int count03 =0;
+        // With continue statement
+        int count03 = 0;
 
-        do{
-          count03 ++;
-          if (count03%2 ==0){
-            continue; //Skips the current iteration when count is even 
-          }
-          System.out.println("Count " + count03);
-        } while(count<5);
+        do {
+            count03++;
+            if (count03 % 2 == 0) {
+                continue; // Skips the current iteration when count is even
+            }
+            System.out.println("Count " + count03);
+        } while (count < 5);
     }
 }

@@ -1,4 +1,4 @@
-package Week3.InstanceMethod;
+package Week3.InstanceVariableAndConstructor;
 
 public class People {
   // The people class has four fields
@@ -59,6 +59,11 @@ public class People {
 
     // Printing the object's state
     System.out.println(person.toString());
+
+    People unknownPeople = new People("Mary", 20, 180, 40);
+    System.out.println(unknownPeople.toString());
+
+
   }
 }
 
