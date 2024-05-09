@@ -6,5 +6,6 @@ public class StaticVariables {
   // Recommended -- Invoking static method with class name
   Person.someStaticMethod();
 
-  // Not Recommended -- Invok
+  // Not Recommended -- Invoking static method with  Object reference 
+  person1 .someStaticMethod();
 }
