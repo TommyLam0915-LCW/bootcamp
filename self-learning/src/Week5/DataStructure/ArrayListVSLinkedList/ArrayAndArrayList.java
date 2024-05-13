@@ -1,4 +1,4 @@
-package Week5.DataStructure;
+package Week5.DataStructure.ArrayListVSLinkedList;
 
 import java.util.ArrayList;
 
